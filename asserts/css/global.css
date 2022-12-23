@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #316bff;
+  --primary-green: #ff543d;
+  --primary-purple: #878cff;
+  --secondary-yellow: #ffaf4e;
+  --secondary-blues: #A4CDE3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ======= */
