@@ -8,19 +8,80 @@
     <link rel="stylesheet" href="./asserts/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./asserts/css/global.css" />
     <link rel="stylesheet" href="./asserts/css/style.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Sign up</title>
   </head>
   <body>
-    <div class="signup">
-      <div class="signup__content">
-        <h1 class="signup__heading">Let's go</h1>
-        <div class="signup__social">
-          <div class="signup__item">
-            <img src="./asserts/" alt="">
-          </div>
-          <div class="signup__item"></div>
+    <div class="signin">
+      <div class="signin__content">
+        <div class="signin__close">
+          <img
+            src="./asserts/images/close.svg"
+            alt="close"
+            class="signin__icon"
+          />
         </div>
+        <h1 class="signin__heading">Welcome Back!</h1>
+        <div class="signin__social">
+          <div class="signin__item google">
+            <i class="fa-brands fa-google"></i>
+            <span>Sign in with Google</span>
+          </div>
+          <div class="signin__item facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+        <div class="signin__with">
+          <a href="#!" class="signin__link">or continue with</a>
+        </div>
+        <form action="#!" class="signin--form">
+          <div class="signin--form__group">
+            <label for="email" class="signin--form__label">Email address</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              id="email"
+              class="signin--form__input"
+            />
+          </div>
+          <div class="signin--form__group">
+            <label for="password" class="signin--form__label">Password</label>
+            <div class="signin--form__password">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+                id="password"
+                class="signin--form__input"
+              />
+              <img
+                src="./asserts/images/eye.svg"
+                alt="eye"
+                class="signin--form__icon"
+              />
+            </div>
+            <a href="#!" class="signin__forget">Forgot your password?</a>
+          </div>
+          <div class="signin--form__group">
+            <button type="submit" class="signin__button signin__button--submit">
+              Sign in
+            </button>
+          </div>
+          <span class="signin__text"
+            >Don’t have an account?
+            <a href="#!" class="signin__signup">Sign up</a></span
+          >
+        </form>
       </div>
     </div>
+    <script src="./asserts/js/index.js"></script>
   </body>
 </html>

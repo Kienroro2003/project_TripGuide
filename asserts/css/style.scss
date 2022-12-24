@@ -1,0 +1,226 @@
+.signin {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.39);
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(50%, -50%);
+    border: 1px solid #e7ecf3;
+  }
+  &__content {
+    position: absolute;
+    width: 466px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 20px 60px rgba(15, 15, 15, 0.12);
+    border-radius: 20px;
+    padding: 53px 48px;
+    text-align: center;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 0 12px;
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+    border-radius: 8px;
+    i {
+      font-size: 20px;
+      color: #fff;
+    }
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff;
+      margin-left: 10px;
+    }
+    &.facebook {
+      background: #3b3e44;
+    }
+    &.google {
+      background: #316bff;
+    }
+  }
+  &__with {
+    position: relative;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: #e7ecf3;
+      z-index: -1;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #84878b;
+    padding: 0 10px;
+    background-color: #fff;
+  }
+  &--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    &__group {
+      width: 100%;
+    }
+    &__label {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3b3e44;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    &__input {
+      width: 100%;
+      border: none;
+      padding: 13.5px 14px;
+      background: #e7ecf3;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #3b3e44;
+      ::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #84878b;
+      }
+    }
+    &__password {
+      position: relative;
+      margin-bottom: 12px;
+    }
+    &__icon {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__forget {
+    display: block;
+    text-align: end;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #316bff;
+  }
+  &__button {
+    width: 100%;
+    background: #316bff;
+    box-shadow: 0px 20px 30px rgba(20, 92, 230, 0.12);
+    border-radius: 8px;
+    border: none;
+    &--submit {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #fffaf7;
+      padding: 11px 0;
+      box-shadow: 0px 20px 30px rgba(20, 92, 230, 0.12);
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3b3e44;
+  }
+  &__signup {
+    color: #316bff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .signin {
+    &__content {
+      top: auto;
+      width: auto;
+      left: 20px;
+      right: 20px;
+      bottom: 30px;
+      padding: 30px;
+      transform: translate(0, 0);
+    }
+    &__social {
+      margin-bottom: 14px;
+    }
+    &__with {
+      margin-bottom: 12px;
+    }
+    &--form {
+      gap: 14px 0;
+      &__label {
+        font-size: 10px;
+        line-height: 15px;
+        margin-bottom: 6px;
+      }
+      &__password {
+        margin-bottom: 12px;
+      }
+      &__input {
+        font-size: 10px;
+        line-height: 15px;
+      }
+    }
+    &__button {
+      &--submit {
+        padding: 8px 0;
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    &__forget {
+      font-size: 10px;
+      line-height: 15px;
+    }
+    &__item {
+      padding: 9px 0;
+      .signin__icon {
+        width: 14px;
+      }
+      span {
+        font-size: 11.4872px;
+        line-height: 11px;
+      }
+    }
+  }
+}
