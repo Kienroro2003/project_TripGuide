@@ -118,17 +118,20 @@
 .header__filter--bottom {
   display: flex;
   gap: 0 8px;
+  position: relative;
 }
 .header__step {
-  flex-grow: 1;
+  flex-basis: 250px;
   padding: 8px 24px 9px;
   background: #f4f5f7;
   opacity: 0.8;
   border: 1px solid #e7e8ea;
   border-radius: 8px;
-  position: relative;
 }
-.header__step--change {
+.header__step.location {
+  flex-basis: 332px;
+}
+.header__change {
   width: 30px;
   height: 30px;
   background-color: #fff;
@@ -138,10 +141,14 @@
   justify-content: center;
   position: absolute;
   top: 50%;
-  right: -4px;
+  transform: translateY(-50%);
+  z-index: 1;
 }
-.header__step.location {
-  width: 332px;
+.header__change:nth-of-type(2) {
+  left: 321px;
+}
+.header__change:nth-of-type(4) {
+  left: 582px;
 }
 .header__title {
   font-weight: 500;
