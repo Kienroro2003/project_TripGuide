@@ -131,11 +131,14 @@
   line-height: 21px;
   color: #84878b;
 }
+.signup--form__column {
+  width: 100%;
+}
 .signup--form__checkbox {
   display: none;
 }
 .signup--form__checkbox:checked ~ .signup--form__box {
-  background-color: #316BFF;
+  background-color: #316bff;
   border: none;
 }
 .signup--form__checkbox:checked ~ .signup--form__box img {
@@ -168,7 +171,6 @@
 }
 .signup--form__password {
   position: relative;
-  margin-bottom: 12px;
 }
 .signup--form__icon {
   position: absolute;
@@ -220,6 +222,10 @@
     padding: 30px;
     transform: translate(0, 0);
   }
+  .signup__heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
   .signup__social {
     margin-bottom: 14px;
   }
@@ -227,19 +233,35 @@
     margin-bottom: 12px;
   }
   .signup--form {
-    gap: 14px 0;
+    gap: 12px 0;
   }
   .signup--form__label {
     font-size: 10px;
     line-height: 15px;
     margin-bottom: 6px;
   }
-  .signup--form__password {
-    margin-bottom: 12px;
-  }
   .signup--form__input {
     font-size: 10px;
     line-height: 15px;
+  }
+  .signup--form__labelCheckbox {
+    width: 169px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: #3b3e44;
+  }
+  .signup__link {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: #316bff;
+  }
+  .signup__text {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    color: #3b3e44;
   }
   .signup__button--submit {
     padding: 8px 0;
