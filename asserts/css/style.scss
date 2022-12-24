@@ -1,4 +1,4 @@
-.signin {
+.signup {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -69,6 +69,11 @@
   &__with {
     position: relative;
     margin-bottom: 20px;
+    a {
+      background-color: #fff;
+      padding: 0 10px;
+      color: #84878b;
+    }
     &::before {
       content: "";
       width: 100%;
@@ -85,9 +90,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #84878b;
-    padding: 0 10px;
-    background-color: #fff;
+    color: #316bff;
   }
   &--form {
     display: flex;
@@ -95,6 +98,11 @@
     gap: 20px 0;
     &__group {
       width: 100%;
+      &:first-of-type,
+      &:nth-of-type(4) {
+        display: flex;
+        gap: 0 14px;
+      }
     }
     &__label {
       display: block;
@@ -103,7 +111,7 @@
       line-height: 16px;
       color: #3b3e44;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     &__input {
       width: 100%;
@@ -121,6 +129,41 @@
         line-height: 21px;
         color: #84878b;
       }
+    }
+    &__checkbox {
+      display: none;
+      &:checked ~ .signup--form__box{
+        background-color: #316BFF;
+        border: none;
+        img{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    &__box {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: #f4f5f6;
+      border: 1px solid #e7ecf3;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      display: grid;
+      place-content: center;
+      img{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+      }
+    }
+    &__labelCheckbox {
+      width: 263px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #3b3e44;
+      text-align: start;
     }
     &__password {
       position: relative;
@@ -163,13 +206,14 @@
     line-height: 21px;
     color: #3b3e44;
   }
-  &__signup {
+  &__signin {
+    font-weight: 500;
     color: #316bff;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .signin {
+  .signup {
     &__content {
       top: auto;
       width: auto;

@@ -19,65 +19,101 @@
     <title>Sign up</title>
   </head>
   <body>
-    <div class="signin">
-      <div class="signin__content">
-        <div class="signin__close">
+    <div class="signup">
+      <div class="signup__content">
+        <div class="signup__close">
           <img
             src="./asserts/images/close.svg"
             alt="close"
-            class="signin__icon"
+            class="signup__icon"
           />
         </div>
-        <h1 class="signin__heading">Welcome Back!</h1>
-        <div class="signin__social">
-          <div class="signin__item google">
+        <h1 class="signup__heading">Let’s go</h1>
+        <div class="signup__social">
+          <div class="signup__item google">
             <i class="fa-brands fa-google"></i>
             <span>Sign in with Google</span>
           </div>
-          <div class="signin__item facebook">
+          <div class="signup__item facebook">
             <i class="fa-brands fa-facebook-f"></i>
           </div>
         </div>
-        <div class="signin__with">
-          <a href="#!" class="signin__link">or continue with</a>
+        <div class="signup__with">
+          <a href="#!" class="signup__link">or continue with</a>
         </div>
-        <form action="#!" class="signin--form">
-          <div class="signin--form__group">
-            <label for="email" class="signin--form__label">Email address</label>
+        <form action="#!" class="signup--form">
+          <div class="signup--form__group">
+            <div class="signup--form__column">
+              <label for="first-name" class="signup--form__label"
+                >First name</label
+              >
+              <input
+                type="text"
+                placeholder="First name"
+                name="first-name"
+                id="first-name"
+                class="signup--form__input"
+              />
+            </div>
+            <div class="signup--form__column">
+              <label for="last-name" class="signup--form__label"
+                >Last name</label
+              >
+              <input
+                type="text"
+                placeholder="Last name"
+                name="last-name"
+                id="last-name"
+                class="signup--form__input"
+              />
+            </div>
+          </div>
+          <div class="signup--form__group">
+            <label for="email" class="signup--form__label">Email</label>
             <input
               type="email"
               placeholder="Enter your email"
               name="email"
               id="email"
-              class="signin--form__input"
+              class="signup--form__input"
             />
           </div>
-          <div class="signin--form__group">
-            <label for="password" class="signin--form__label">Password</label>
-            <div class="signin--form__password">
+          <div class="signup--form__group">
+            <label for="password" class="signup--form__label">Password</label>
+            <div class="signup--form__password">
               <input
                 type="password"
                 placeholder="Enter your password"
                 name="password"
                 id="password"
-                class="signin--form__input"
+                class="signup--form__input"
               />
               <img
                 src="./asserts/images/eye.svg"
                 alt="eye"
-                class="signin--form__icon"
+                class="signup--form__icon"
               />
             </div>
-            <a href="#!" class="signin__forget">Forgot your password?</a>
           </div>
-          <div class="signin--form__group">
-            <button type="submit" class="signin__button signin__button--submit">
+          <div class="signup--form__group">
+            <input type="checkbox" id="terms" class="signup--form__checkbox" />
+            <div class="signup--form__box">
+              <img src="./asserts/images/tick.svg" alt="">
+            </div>
+            <label for="terms" class="signup--form__labelCheckbox"
+              >I’ve read and accepted
+              <a href="#!" class="signup__link">Terms of Service</a> and
+              <a href="#!" class="signup__link">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="signup--form__group">
+            <button type="submit" class="signup__button signup__button--submit">
               Sign in
             </button>
           </div>
-          <span class="signin__text"
+          <span class="signup__text"
             >Don’t have an account?
-            <a href="#!" class="signin__signup">Sign up</a></span
+            <a href="#!" class="signup__signin">Sign up</a></span
           >
         </form>
       </div>
